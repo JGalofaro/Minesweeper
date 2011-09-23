@@ -1,0 +1,89 @@
+24 HOUR CHALLENGE #1    -    MINESWEEPER
+
+PROBLEM STATEMENT:
+I will have 24 hours to complete various levels of achievement starting with the first commit of 
+this README file. For this challege I will be creating a a version of the popular game 
+Minesweeper.
+
+LEVELS OF ACHIEVEMENT:
+This project has 4 levels of achievement.
+
+LEVEL 1:
+Level 1 is worth 25 points. I will not recieve any points for higher levels of achievement unless 
+all these requirements are met. The level 1 game must launch a reasonable GUI, set the
+gameboard and provide a diagnostic mechanism so the work can easily be evaluated. A
+"reasonable" GUI is one that nicely displays the game matrix and status, and gracefully ends
+the program when the user quits the game.
+
+The diagnostic mechanism must provide a way to determine what is at each square on the 
+board (a blank or a bomb).
+
+Level 1 gameboard only consists of two components: either a blank or a bomb.
+
+The program must accept two command line arguments (in this order): a number representing 
+the size of the board (the board will always be built as a square) and the number of bombs. The
+minimum board size is 6 by 6; if a user attempts to build a smaller board, create the board as a 
+6 by 6. The number of bombs can't exceed the number of squares on the board. If the command
+line arguments are missing or invalid, display an appropriate message and gracefully terminate 
+your game.
+
+At Level 1, there is no need to implement any game logic.
+
+
+LEVEL 2:
+Level 2 is worth 25 points. I will not recieve any points for Level 2 unless all the requirements for
+level 1 have been met. 
+
+For Level 2, the GUI must also report the integer values on appropriate squares. Each square 
+surrounding a bomb must indicate the number of adjacent squares contaning a bomb.
+
+Also at Level 2, the diagnostic mechanism must be enhanced to display the 3 possible states of 
+each square: empty, an integer, or a bomb.
+
+
+LEVEL 3:
+Level 3 is worth 25 points. I will not recieve any points for Level 3 unless all the requirements for
+Level 2 have been met. 
+
+Level 3 implements some of the functionality of the game. The game must respond to the user
+selecting squares on your gameboard and must accurately represesnt the user actions on both 
+the board and in the diagnostics. Note that the "real" game might expose more than one square
+on a single selection; at this level, the game will only expose the status of the square selected
+by the user.
+
+The GUI must implement additional components to the track the current state of the game, the
+number of bombs detonated so far and the number of "safe" squares selections.
+
+The game must allow the user to detonate as many as 3 bombs before ending the game. This is
+unlike the "real" game that terminates the game as soon as one bomb is found. This game must 
+report the "game over" status to the user then reveal the remaining squares on the board.
+
+When revealing the board, the GUI should make it easy for the user to determine the state of 
+each square at the time the game ended, showing one of the following:
+    * Not selected and containing a blank
+    * Not selected and containing a bomb
+    * Not selected and containing an integer
+    * Selected and containing a blank
+    * Selected and containing a bomb
+    * Selected and containing an integer
+
+
+LEVEL 4:
+Level 4 is worth 10 points. I will not recieve any points for Level 4 unless all the requirements for
+Level 3 have been met. 
+
+At Level 4, the game must report when the game has been won -- if the user has revealed all
+squares without detonating 3 bombs, (That is, the user has revealed all squares containing a
+blank or an integer and has not revealed more than 2 squares containg bombs).
+
+The game must implement the logic to expose more than one square if surrounding squares are
+blank.
+
+There must be a "Reset" which resets the board and allows the user to start a new game
+(without restating the program). The gameboard must be the same size as when the game 
+launched (the value obatained via the command line argument) but the user must be able to 
+change the number of bombs placed on the board.
+
+
+CURRENT STATUS:
+
