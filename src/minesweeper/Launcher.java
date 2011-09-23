@@ -42,5 +42,7 @@ public class Launcher {
 		
 		/** DEBUG PURPOSES **/
 		System.out.println("All checks have passed.");
+		
+		new Interface(boardSize, numOfBombs);
 	}
 }
